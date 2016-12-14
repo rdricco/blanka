@@ -1,0 +1,79 @@
+locale                   : "pt_BR" #
+title: "linklog"
+email: contato@r-ricco.com
+description: linklog pessoal do renato ricco. Powered by Jekyll.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://links.r-ricco.com" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: r_ricco
+github_username:  rdricco
+facebook_username: r.ricco
+timezone: America/Sao_Paulo # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+google_analytics: # UA-NNNNNNNN-N
+atom_feed:
+  path                   : # blank (default) uses feed.xml
+disqus:
+  shortname: #my_disqus_shortname
+
+  # Social Sharing
+twitter:
+  username               :
+facebook:
+  app_id                 :  # used on facebook analytics
+  publisher              : # use only for facebook pages
+  username               :  # your personal profile
+og_image                 :  # Open Graph/Twitter default site image
+# - For specifying social profiles:
+# - https://developers.google.com/structured-data/customize/social-profiles
+social:
+  type                   : # Person or Organization (defaults to Person)
+  name                   : # If the user or organization name differs from the site's name
+  links                  : # An array of links to social media profiles
+    - https://twitter.com/r_ricco
+    - https://www.facebook.com/r.ricco
+    - https://github.com/rdricco
+
+
+
+pages: ./_pages
+
+# Build settings
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+
+gems:
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jemoji
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-archives
+  - jekyll-twitter-plugin
+  - jekyll-maps
+  - jekyll-youtube
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - frasco.config.js
+  - gulpfile.js
+  - LICENSE
+  - node_modules
+  - npm-debug.log
+  - package.json
+  - README.md
