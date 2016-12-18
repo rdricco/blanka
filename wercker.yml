@@ -1,0 +1,16 @@
+box: ruby
+build:
+  steps:
+    - bundle-install
+    - script:
+            name: generate site
+            code: bundle exec jekyll build  --verbose
+
+deploy:
+  steps:
+    - takuma7/gh-pages@0.2.3:
+        token: $GIT_TOKEN
+        basedir: _site
+        branch: gh-pages
+        domain: links.r-ricco.com
+        repo: "rdricco/links"
