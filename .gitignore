@@ -18,10 +18,13 @@ wp-config.php
 /db/*.sqlite3
 /db/*.sqlite3-journal
 /public/uploads
+Gemfile.lock
 
 # Jekyll
 _site
 .jekyll-metadata
+.asset-cache
+.tweet-cache
 
 # Node.js
 node_modules/

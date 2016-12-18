@@ -1,0 +1,43 @@
+prose:
+  siteurl: "http://links.r-ricco.com/"
+  rooturl: '_posts'
+  media: 'images'
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Titulo"
+          value: ""
+      - name: "external-url"
+        field:
+          element: "text"
+          label: "Link"
+          placeholder: "Insira a URL aqui"
+          value: ""
+      - name: "youtubeurl"
+        field:
+          element: "text"
+          label: "youtube"
+          placeholder: "Insira a URL aqui"
+          value: ""
+      - name: "tweet"
+        field:
+          element: "text"
+          label: "tweet"
+          placeholder: "Insira a URL aqui"
+          value: ""
+      - name: "date"
+        field:
+          element: "text"
+          label: "Data"
+          value: "CURRENT_DATETIME"
+      - name: "published"
+        field:
+          element: "checkbox"
+          label: "Published"
+          value: true
